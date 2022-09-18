@@ -14,16 +14,5 @@ console.log('First Word: ' + jawabanFirstWord); //First Word: R.L
 console.log('Second Word: ' + jawabanSecondWord); //Second Word: R.A
 console.log('Third Word: ' + jawabanThirdWord); //Third Word: N.B
 
-// function asd (kalimat) {
-//     let singkatannya=''
-//     for(let i=0;i<kalimat.length;i++){
-       
-//         if(kalimat[i]==kalimat[i].toUpperCase() && kalimat[i] != ' '){
-            
-//             singkatannya+=kalimat[i]+'.'
-//         }
-//     }
-//     return singkatannya.slice(0, -1)
-// }
 
 // console.log(asd(first))

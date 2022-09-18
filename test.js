@@ -14,5 +14,16 @@ console.log('Third Word: ' + jawabanThirdWord); //Third Word: N.B
 
 
 
+// function asd (kalimat) {
+//     let singkatannya=''
+//     for(let i=0;i<kalimat.length;i++){
+       
+//         if(kalimat[i]==kalimat[i].toUpperCase() && kalimat[i] != ' '){
+            
+//             singkatannya+=kalimat[i]+'.'
+//         }
+//     }
+//     return singkatannya.slice(0, -1)
+// }
 
 
