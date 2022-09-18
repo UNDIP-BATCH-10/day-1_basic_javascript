@@ -5,19 +5,7 @@
 
 
 function cekUjian(a,b){
-    let x=0
-        for(let i=0;i<a.length;i++){
-            if(b[i]==""){
-                x+=0
-            }
-            else if(a[i]==b[i]){
-                x+=4
-            }
-            else{
-                x-=1
-            }
-        }
-        return x<0?0:x
+
     }
     
     

@@ -1,30 +1,6 @@
 
 function muridTerbaik(nilai) {
-    let nama2 = Object.keys(nilai);
-    let nilai2 = Object.values(nilai);
-    let tertinggi = 0;
-    let z=0
-  
-    let avg = [];
-    for (let i = 0; i < nilai2.length; i++) {
-      let totalNilai = 0;
-      let rata2=0
-      for( let j = 0; j < nilai2[i].length; j++) {
-        totalNilai += nilai2[i][j];
-      }
-        rata2= totalNilai/nilai2[i].length
-        avg.push(rata2);
-        
-    }
-    
-    for(let n=0;n<avg.length;n++){
-      if(avg[n]>tertinggi){
-        tertinggi=avg[n]
-        z=n
-      }
-    }
-    return nama2[z]
-  
+
   }
   
   

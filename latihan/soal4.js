@@ -2,6 +2,9 @@
 Diketahui ada bilangan 1 sampai dengan 500. Tugas anda adalah mencari bilangan prima diantara bilangan tersebut. Dan lakukan console.log pada bilangan tersebut
 */
 
+function bilanganPrima(){
+
+}
 
 //2 adalah bilangan prima
 //3 adalah bilangan prima

@@ -1,3 +1,8 @@
+/*
+carilah  total harga barang dari setiap pembelian yang di lakukan
+*/
+
+
 function totalHarga(barang) {
 
 	
