@@ -13,10 +13,10 @@ function muridTerbaik(nilai) {
   nilaiMurid = nilaiMurid.filter(function(n) { return n != undefined });
   
   // get the highest average
-  var highestAverage = nilaiMurid.reduce(function(a, b) { return a[1] > b[1] ? a : b; })[1];
+  let highestAverage = nilaiMurid.reduce(function(a, b) { return a[1] > b[1] ? a : b; })[1];
 
   // get the highest average student
-  var highestAverageStudent = nilaiMurid.filter(function(n) { return n[1] === highestAverage; });
+  let highestAverageStudent = nilaiMurid.filter(function(n) { return n[1] === highestAverage; });
   
   // return the highest average student's name string
   return highestAverageStudent.map(function(n) { return n[0]; }).join(', ');
