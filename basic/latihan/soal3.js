@@ -14,6 +14,6 @@ function RNA(DNA) {
 }
 
 //output
-console.log(DNA1) // "UUUU"
-console.log(DNA2) // "GCAU"
-console.log(DNA3) //  "GACCGCCGCC"
+console.log(RNA(DNA1)) // "UUUU"
+console.log(RNA(DNA2)) // "GCAU"
+console.log(RNA(DNA3)) //  "GACCGCCGCC"
