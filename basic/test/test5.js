@@ -1,7 +1,29 @@
 
 function muridTerbaik(nilai) {
+    // convert nilai from object to associative array with it's key
+    var nilaiMurid = [];
+    for (var key in nilai) {
+        // get the average of nilai[key] as average
+        var average = nilai[key].reduce(function(a, b) { return a + b; }) / nilai[key].length;
+        nilaiMurid.push([key,  average]);
+    }
 
-  }
+    
+
+    // filter undefined from nilaiMurid
+    nilaiMurid = nilaiMurid.filter(function(n) { return n != undefined });
+    
+    // get the highest average
+    var highestAverage = nilaiMurid.reduce(function(a, b) { return a[1] > b[1] ? a : b; })[1];
+
+    // get the highest average student
+    var highestAverageStudent = nilaiMurid.filter(function(n) { return n[1] === highestAverage; });
+    
+    // return the highest average student's name string
+    return highestAverageStudent.map(function(n) { return n[0]; }).join(', ');
+    
+}
+
   
   
   
