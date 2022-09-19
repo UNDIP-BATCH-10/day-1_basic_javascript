@@ -8,7 +8,10 @@ let DNA1 = "TTTT"
 let DNA2 = "GCAT"
 let DNA3 = "GACCGCCGCC"
 
-
+function RNA(DNA) {
+    let DNAX =DNA.replaceAll('T','U');
+    return DNA = DNAX;
+}
 
 //output
 console.log(DNA1) // "UUUU"
