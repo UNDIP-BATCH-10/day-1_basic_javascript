@@ -4,9 +4,14 @@
 
 function duaKaliUsia(ayah, anak) {
     // your code here
-
-  }
-
+    // var selisih = 0;
+    // var hasil = 0;
+    for ( var i = 0; i<anak; i++ ){
+      if ( ayah - i === (anak - i) * 2){
+        return i;
+      }
+    }
+}
 
 console.log(duaKaliUsia(55,30)) //5
 console.log(duaKaliUsia(27,17)) //7
