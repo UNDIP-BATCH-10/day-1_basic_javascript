@@ -3,10 +3,10 @@ Diketahui ada bilangan 1 sampai dengan 500. Tugas anda adalah mencari JUMLAH bil
 */
 
 function jumlahBilanganPrima(){
-    var hasil = 0;
-    for (var i = 1; i <= 500; i++) {
-        var cek = 0;
-        for (var j = 1; j <= i; j++) {
+    let hasil = 0;
+    for (let i = 1; i <= 500; i++) {
+        let cek = 0;
+        for (let j = 1; j <= i; j++) {
             if (i % j === 0) {
                 cek++;
             }
@@ -18,5 +18,5 @@ function jumlahBilanganPrima(){
     return hasil;
 }
 
-var jml = jumlahBilanganPrima();
+let jml = jumlahBilanganPrima();
 console.log(jml); 

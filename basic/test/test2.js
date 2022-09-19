@@ -5,8 +5,8 @@
 
 
 function cekUjian(a,b){
-    var nilai = 0;
-    for (var i = 0; i < a.length; i++) {
+    let nilai = 0;
+    for (let i = 0; i < a.length; i++) {
         if (a[i] === b[i]) {
             nilai += 4;
         } else if (b[i] === '') {

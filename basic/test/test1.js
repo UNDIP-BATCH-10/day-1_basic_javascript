@@ -5,9 +5,9 @@ Untuk soal nomor ini, gunakan FUNCTION yang berisi CONDITIONAL dan LOOPING untuk
 
 
 function singkatan (nama) {
-    var hasil = '';
-    var kata = nama.split(' ');
-    for (var i = 0; i < kata.length; i++) {
+    let hasil = '';
+    let kata = nama.split(' ');
+    for (let i = 0; i < kata.length; i++) {
         hasil += kata[i][0] + '.';
     }
     hasil = hasil.slice(0, -1);
