@@ -3,6 +3,9 @@
 
   function prima(num) {
     var x= 0;
+    if (num == 1){
+      return false
+    }
     for(var i = 2; i<= Math.floor(num/2); i++) {
       x++
       if (num%i === 0) {

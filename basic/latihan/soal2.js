@@ -7,16 +7,19 @@ let second = 'Raffi Ahmad';
 let third = 'Andrea Pirlo';
 
 function singkatan (nama) {
-    anu = nama.split(" ");
-    for(i=1; i == anu.length; i++){
-        inu[i] = anu[i].slice(0);
+    let anu = nama.split(" ");
+    // return anu.length;
+    let inu = [];
+    for(var i=0; i < anu.length; i++){
+        inu[i] = anu[i].slice(0,1);
     }
     return inu.join(".");
  }
-
+//  console.log(singkatan(first));
+ 
  jawabanFirstWord = singkatan(first);
  jawabanSecondWord = singkatan(second);
- jawabanSecondWord = singkatan(third);
+ jawabanThirdWord = singkatan(third);
 
 console.log('First Word: ' + jawabanFirstWord); //First Word: R.L
 console.log('Second Word: ' + jawabanSecondWord); //Second Word: R.A
