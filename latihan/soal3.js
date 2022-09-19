@@ -7,13 +7,10 @@ RNA, adalah molekul pembawa pesan utama dalam sel. RNA sedikit berbeda dari DNA 
 let DNA1 = "TTTT"
 let DNA2 = "GCAT"
 let DNA3 = "GACCGCCGCC"
-let DNA4 = "CCTAATAAAA"
-let DNA5 = "TTCGG"
+
 
 
 //output
 console.log(DNA1) // "UUUU"
 console.log(DNA2) // "GCAU"
 console.log(DNA3) //  "GACCGCCGCC"
-console.log(DNA4) // "CCTAATAAAA"
-console.log(DNA5) // "TTCGG"
