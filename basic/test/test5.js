@@ -10,7 +10,7 @@ function muridTerbaik(nilai) {
     }
   );
   number = number.sort(function(a, b){return b.nilai-a.nilai});
-  let [first] = Object.keys(number);
+  // let [first] = Object.keys(number);
   return number[0].nama;
 }
   
