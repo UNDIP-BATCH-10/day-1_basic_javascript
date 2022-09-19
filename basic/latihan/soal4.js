@@ -2,7 +2,11 @@
 
 
 function prima(num) {
-
+if((num%2==0) && (num%num==0)){
+  return true
+}else{
+  return false
+}
   }
   
   console.log(prima(1)) //false
