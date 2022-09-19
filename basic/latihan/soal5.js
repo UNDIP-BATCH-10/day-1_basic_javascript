@@ -4,11 +4,12 @@ carilah  total harga barang dari setiap pembelian yang di lakukan
 
 
 function totalHarga(barang) {
+	let temp = 0;
 	for (let i = 0; i < barang.length; i++) {
-		console.log(barang[i]);
-		console.log(barang);
+		temp += barang[i].harga * barang[i].jumlah;
+		// console.log(barang[i].harga * barang[i].jumlah);
 	}
-	// return barang.jumlah * barang.harga;
+	return temp;
 }
 
 
