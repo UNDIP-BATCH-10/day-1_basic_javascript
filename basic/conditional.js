@@ -28,3 +28,5 @@ let angka2 ='1'
 if (angka1 !== angka2) {
     console.log('ya sama');
 }
+
+(angka1==angka2)?console.log('betul'):console.log('salah');
