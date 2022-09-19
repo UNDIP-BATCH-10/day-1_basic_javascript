@@ -13,6 +13,9 @@
                 nilai -= 1;
             }
         }
+        if(nilai < 0){
+            nilai = 0;
+        }
         return nilai;
     }
     
