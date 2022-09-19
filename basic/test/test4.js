@@ -4,7 +4,13 @@
 
 function duaKaliUsia(ayah, anak) {
     // your code here
-
+    var usia = 0;
+    while(anak*2 !== ayah) {
+        ayah--;
+        anak--;
+        usia++;
+    }
+    return usia;
   }
 
 

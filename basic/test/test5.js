@@ -1,10 +1,15 @@
+function muridTerbaik(nilai) {  
+    var nilaiMurid = [];
+    for (var key in nilai) {
+        var average = nilai[key].reduce(function(a, b) { return a + b; }) / nilai[key].length;
+        nilaiMurid.push([key,  average]);
+    }       
+    var highestAverage = nilaiMurid.reduce(function(a, b) { return a[1] > b[1] ? a : b; })[1];
 
-function muridTerbaik(nilai) {
-
-  }
-  
-  
-  
+    var highestAverageStudent = nilaiMurid.filter(function(n) { return n[1] === highestAverage; });
+    
+    return highestAverageStudent.map(function(n) { return n[0]; }).join(', ');
+  } 
   
   console.log(muridTerbaik({
       John: [100, 90, 80],
