@@ -8,9 +8,19 @@ let DNA1 = "TTTT"
 let DNA2 = "GCAT"
 let DNA3 = "GACCGCCGCC"
 
-
+function RNA(DNA) {
+    let temp = "";
+    for (let i = 0; i < DNA.length; i++) {
+        if (DNA[i] == "T") {
+            temp += "U";
+        }else {
+            temp += DNA[i];
+        }
+    }
+    return DNA = temp;
+}
 
 //output
-console.log(DNA1) // "UUUU"
-console.log(DNA2) // "GCAU"
-console.log(DNA3) //  "GACCGCCGCC"
+console.log(RNA(DNA1)) // "UUUU"
+console.log(RNA(DNA2)) // "GCAU"
+console.log(RNA(DNA3)) //  "GACCGCCGCC"
