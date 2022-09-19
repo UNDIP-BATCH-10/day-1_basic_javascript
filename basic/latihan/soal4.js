@@ -1,8 +1,15 @@
 // buatlah sebuah fungsi untuk mengetahui apakah suatu bilangan adalah bilangan prima
 
 
-function prima(num) {
-
+  function prima(num) {
+    var x= 0;
+    for(var i = 2; i<= Math.floor(num/2); i++) {
+      x++
+      if (num%i === 0) {
+        return false
+      } 
+    }
+    return true
   }
   
   console.log(prima(1)) //false
