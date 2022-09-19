@@ -1,9 +1,9 @@
 function muridTerbaik(nilai) {
   // convert nilai from object to associative array with it's key
-  var nilaiMurid = [];
-  for (var key in nilai) {
+  let nilaiMurid = [];
+  for (let key in nilai) {
       // get the average of nilai[key] as average
-      var average = nilai[key].reduce(function(a, b) { return a + b; }) / nilai[key].length;
+      let average = nilai[key].reduce(function(a, b) { return a + b; }) / nilai[key].length;
       nilaiMurid.push([key,  average]);
   }
 
