@@ -8,6 +8,15 @@ let DNA1 = "TTTT"
 let DNA2 = "GCAT"
 let DNA3 = "GACCGCCGCC"
 
+// replace T with U in DNA1
+DNA1 = DNA1.replace(/T/g, 'U')
+
+// replace T with U in DNA2
+DNA2 = DNA2.replace(/T/g, 'U')
+
+// replace T with U in DNA3
+DNA3 = DNA3.replace(/T/g, 'U')
+
 
 
 //output
