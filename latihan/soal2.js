@@ -7,6 +7,6 @@ let second = 'Raffi Ahmad';
 let third = 'Andrea Pirlo';
 
 
-console.log('First Word: ' + jawabanFirstWord); //First Word: R.L
-console.log('Second Word: ' + jawabanSecondWord); //Second Word: R.A
-console.log('Third Word: ' + jawabanThirdWord); //Third Word: N.B
+console.log('First Word: ' + first); //First Word: R.L
+console.log('Second Word: ' + second); //Second Word: R.A
+console.log('Third Word: ' + third); //Third Word: N.B

@@ -2,7 +2,7 @@
 
 
 function prima(num) {
-
+    return ;
   }
   
   console.log(prima(1)) //false
