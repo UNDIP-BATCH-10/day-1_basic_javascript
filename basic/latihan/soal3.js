@@ -8,6 +8,9 @@ let DNA1 = "TTTT"
 let DNA2 = "GCAT"
 let DNA3 = "GACCGCCGCC"
 
+DNA1 = DNA1.replace(/U/g,'T');
+DNA2 = DNA2.replace(/T/g,'U');
+// DNA3.replace()
 
 
 //output
