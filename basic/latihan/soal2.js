@@ -5,8 +5,8 @@ Pada tugas ini kamu diminta untuk merubah sebuah kalimat dan menampilkan setiap 
 let first = 'Raul Lemos';
 let second = 'Raffi Ahmad';
 let third = 'Andrea Pirlo';
+dot = '.';
 
-
-console.log('First Word: ' + jawabanFirstWord); //First Word: R.L
-console.log('Second Word: ' + jawabanSecondWord); //Second Word: R.A
-console.log('Third Word: ' + jawabanThirdWord); //Third Word: N.B
+console.log('First Word: ' + first.substring(0,1)+dot+first.substring(5,6)); //First Word: R.L
+console.log('Second Word: ' + second.substring(0,1)+dot+second.substring(6,7)); //Second Word: R.A
+console.log('Third Word: ' + third.substring(0,1)+dot+third.substring(7,8)); //Third Word: N.B
