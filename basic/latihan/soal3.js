@@ -8,7 +8,11 @@ let DNA1 = "TTTT"
 let DNA2 = "GCAT"
 let DNA3 = "GACCGCCGCC"
 
-
+function DNA2RNA(dna) {
+    
+    return dna.replace(/T/g, `U`);
+}
+DNA1 = DNA2RNA(DNA1);
 
 //output
 console.log(DNA1) // "UUUU"

@@ -4,8 +4,11 @@ carilah  total harga barang dari setiap pembelian yang di lakukan
 
 
 function totalHarga(barang) {
-
-	
+	let total = 0;
+	barang.forEach(element => {
+		total = total + (element.jumlah * element.harga);
+	});
+	return total;
 }
 
 

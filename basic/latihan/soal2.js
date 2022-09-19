@@ -6,6 +6,18 @@ let first = 'Raul Lemos';
 let second = 'Raffi Ahmad';
 let third = 'Andrea Pirlo';
 
+function getFirstLetters(str) {
+    const firstLetters = str
+      .split(' ')
+      .map(word => word[0])
+      .join('.');
+  
+    return firstLetters;
+  }
+
+let jawabanFirstWord = getFirstLetters(first);
+let jawabanSecondWord = getFirstLetters(second);
+let jawabanThirdWord = getFirstLetters(third);
 
 console.log('First Word: ' + jawabanFirstWord); //First Word: R.L
 console.log('Second Word: ' + jawabanSecondWord); //Second Word: R.A
