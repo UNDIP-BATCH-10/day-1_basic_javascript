@@ -3,7 +3,15 @@
 */
 
 function duaKaliUsia(ayah, anak) {
-    // your code here
+  let countTahun = 0
+    for (let i= ayah; i>0; i--) {
+      if (i == 2 * (anak - countTahun)) {
+        break
+      }else {
+        countTahun = countTahun + 1
+      }
+    }
+    return countTahun
 
   }
 

@@ -1,14 +1,47 @@
 
 function muridTerbaik(nilai) {
+  for (const data in nilai) {
+    let total = 0
+    let arrNilai = nilai[data]
+    for (let i= 0; i< arrNilai.length; i++) {
+      total += arrNilai[i]
+    }
+    let rata = total / arrNilai.length
+
+    nilai[data] = rata
+  }
+
+  /**
+   * {
+   * Bob : 86,
+   * John : 90
+   * }
+   */
+
+  // Looping Buat Cari Siapa Tertinggi
+  let siswaTertinggi = ""
+  let nilaiTertinggi  = 0
+  for (const namaSiswa in nilai) {
+    if (nilai[namaSiswa] > nilaiTertinggi) {
+      nilaiTertinggi = nilai[namaSiswa]
+      siswaTertinggi = namaSiswa
+    }
+  }
+
+  return siswaTertinggi
 
   }
+
+  //  {
+  //   Bob : [1,2,3] => Bob : 2
+  //  }
   
   
   
   
   console.log(muridTerbaik({
-      John: [100, 90, 80],
-      Bob: [100, 70, 80]
+    Bob: [100, 70, 80],
+    John: [100, 90, 80]
   }))// John
   
   console.log(muridTerbaik({

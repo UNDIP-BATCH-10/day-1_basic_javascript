@@ -4,9 +4,19 @@
 
 
 
-function cekUjian(a,b){
-
+function cekUjian(a, b){
+    let total = 0
+    for (let i = 0; i < b.length; i ++) {
+        if (b[i] == "") {
+            total = total + 0
+        }else if (b[i] == a[i]) {
+            total = total + 4
+        }else {
+            total = total - 1
+        }
     }
+    return total
+}
     
     
     
@@ -17,4 +27,4 @@ function cekUjian(a,b){
     console.log(cekUjian(["a", "a", "b", "b"], ["a", "c", "b", "d"]), 6);
     console.log(cekUjian(["a", "a", "c", "b"], ["a", "a", "b",  ""]), 7);
     console.log(cekUjian(["a", "a", "b", "c"], ["a", "a", "b", "c"]), 16);
-    console.log(cekUjian(["b", "c", "b", "a"], ["",  "a", "a", "c"]), 0);
+    console.log(cekUjian(["b", "c", "b", "a"], ["",  "a", "a", "c"]),-3);
