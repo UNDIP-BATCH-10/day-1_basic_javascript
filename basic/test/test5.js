@@ -1,8 +1,18 @@
 
 function muridTerbaik(nilai) {
-
-  }
-  
+  var number = [];
+  var i = 0;
+  Object.keys(nilai).forEach( key => {
+      let v = nilai[key].reduce(function(a,b){ return a+b; },0);
+      let k = key;
+      number[i] = {'nama':k,'nilai':v};
+      i++;
+    }
+  );
+  number = number.sort(function(a, b){return b.nilai-a.nilai});
+  // let [first] = Object.keys(number);
+  return number[0].nama;
+}
   
   
   

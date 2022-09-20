@@ -2,10 +2,22 @@
  buatlah sebuah fungsi untuk menghitung  berapa tahun yang lalu kah usia ayah 2x usia anaknya
 */
 
-function duaKaliUsia(ayah, anak) {
-    // your code here
+// function duaKaliUsia(ayah, anak) {
+//     // your code here
 
+//   }
+
+
+function duaKaliUsia(ayah, anak) {
+  // your code here
+  // var selisih = 0;
+  // var hasil = 0;
+  for ( var i = 0; i<anak; i++ ){
+    if ( ayah - i === (anak - i) * 2){
+      return i;
+    }
   }
+}
 
 
 console.log(duaKaliUsia(55,30)) //5

@@ -5,12 +5,20 @@
 
 
 function cekUjian(a,b){
-
+    var nilai = 0;
+    for ( var i = 0; i < a.length; i++ ){
+        if( a[i] == b[i] ){
+            nilai += 4; 
+        } else if( a[i] !== b[i] && b[i] !== '' ){
+            nilai -= 1;
+        }
     }
-    
-    
-    
-    
+    if(nilai < 0){
+        nilai = 0;
+    }
+    return nilai;
+}
+       
     
     
     
