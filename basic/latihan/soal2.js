@@ -6,6 +6,9 @@ let first = 'Raul Lemos';
 let second = 'Raffi Ahmad';
 let third = 'Andrea Pirlo';
 
+var jawabanFirstWord = first.split(' ').map((n)=>n[0]).join('.');
+var jawabanSecondWord = second.split(' ').map((n)=>n[0]).join('.');
+var jawabanThirdWord = third.split(' ').map((n)=>n[0]).join('.');
 
 console.log('First Word: ' + jawabanFirstWord); //First Word: R.L
 console.log('Second Word: ' + jawabanSecondWord); //Second Word: R.A
