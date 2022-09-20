@@ -9,3 +9,8 @@ let fourth = 1945;
 let fifth = 'adalah Hari Kemerdekaan RI';
 
 //output : Tanggal 17 Agustus 1945 adalah Hari Kemerdekaan RI
+
+
+let kemerdekaan=first+' '+second+' '+fourth+' '+' '+fifth;
+console.log(kemerdekaan);
+
