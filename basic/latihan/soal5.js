@@ -3,14 +3,15 @@ carilah  total harga barang dari setiap pembelian yang di lakukan
 */
 
 
+//function totalHarga(barang) {
 function totalHarga(barang) {
+	var total = 0;
+	for (var i = 0; i < barang.length; i++) {
+		total += barang[i].jumlah * barang[i].harga;
+	}
+	return total;
 
-	
 }
-
-
-
-
 
 console.log(totalHarga([
 	{ product: "Milk", jumlah: 1, harga: 1.50 }
