@@ -3,7 +3,7 @@ Pada tugas ini kamu diminta untuk merubah sebuah kalimat dan menampilkan setiap 
 Untuk soal nomor ini, gunakan FUNCTION yang berisi CONDITIONAL dan LOOPING untuk menyelesaikannya
 */
 
-function singkatan(nama) {
+/*function singkatan(nama) {
   switch (nama) {
     case "Raul Lemos":
       console.log(nama.charAt(0) + "." + nama.charAt(5));
@@ -18,12 +18,16 @@ function singkatan(nama) {
       console.log("tidak ada semua");
       break;
   }
-}
+}*/
 
 function singkatan(nama) {
-  let nama1 = "Raul Lemos";
-  let nama2 = "Raffi Ahmad";
-  let nama3 = "Andrea Pirlo";
+  let output = "";
+  let spasi = nama.split(" ");
+  for (let i = 0; i < spasi.length; i++) {
+    output += spasi[i][0] + ".";
+  }
+  output = output.slice(0, -1);
+  return output;
 }
 
 console.log(singkatan("Raul Lemos")); //R.L
