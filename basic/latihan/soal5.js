@@ -2,14 +2,11 @@
 carilah  total harga barang dari setiap pembelian yang di lakukan
 */
 
-
-function totalHarga(barang) {
-
-	
-}
-
-
-
+function totalHarga(barang){
+	let total = 0;
+   barang.map(e => {total = total+(e.harga*e.jumlah)})
+   return total;
+   }
 
 
 console.log(totalHarga([
@@ -31,3 +28,5 @@ console.log(totalHarga([
 	{ product: "Bread", jumlah: 2, harga: 1.60 },
 	{ product: "Cheese", jumlah: 1, harga: 4.50 }
 ])) //10.4
+
+
