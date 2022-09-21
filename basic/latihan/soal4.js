@@ -2,8 +2,19 @@
 
 
 function prima(num) {
-
+  var x = 0;
+  for (var i = 1; i <= num; i++) {
+    if (num % i === 0) {
+      x++;
+    }
   }
+
+  if (x === 2) {
+    return true;
+  } else {
+    return false;
+  }
+}
   
   console.log(prima(1)) //false
   console.log(prima(2)) //true

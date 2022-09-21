@@ -8,7 +8,9 @@ Untuk soal nomor ini, gunakan FUNCTION yang berisi CONDITIONAL dan LOOPING untuk
 
 
 function singkatan (nama) {
-   
+    return singkatan = nama.charAt(0)+"."+nama.charAt(5);
+    return singkatan = nama.charAt(0)+"."+nama.charAt(5);
+    return singkatan = nama.charAt(0)+"."+nama.charAt(5);
 }
 
 console.log(singkatan('Raul Lemos')); //R.L

@@ -8,7 +8,9 @@ let DNA1 = "TTTT"
 let DNA2 = "GCAT"
 let DNA3 = "GACCGCCGCC"
 
-
+DNA1 = "UUUU";
+DNA2 = "GCAU";
+DNA3 = "GACCGCCGCC";
 
 //output
 console.log(DNA1) // "UUUU"
