@@ -20,4 +20,4 @@ function singkatan (nama) {
 console.log(singkatan('Raul Lemos')); //R.L
 console.log(singkatan('Raffi Ahmad')); //R.A
 console.log(singkatan('Andrea Pirlo')); //A.P
-
+//
