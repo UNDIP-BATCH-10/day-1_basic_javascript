@@ -5,14 +5,21 @@
 
 
 function cekUjian(a,b){
-
+    var nilaiujian = 0;
+    for (var x = 0; x < a.length; x++) {
+        if (a[x] === b[x]) {
+            nilaiujian += 4;
+        } else if (b[x] === "") {
+            nilaiujian += 0;
+        } else {
+            nilaiujian -= 1;
+        }
     }
-    
-    
-    
-    
-    
-    
+    if (nilaiujian < 0) {
+        nilaiujian = 0;
+    }
+    return nilaiujian;
+}
     
     console.log(cekUjian(["a", "a", "b", "b"], ["a", "c", "b", "d"]), 6);
     console.log(cekUjian(["a", "a", "c", "b"], ["a", "a", "b",  ""]), 7);
