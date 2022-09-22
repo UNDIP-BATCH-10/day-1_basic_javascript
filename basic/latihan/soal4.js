@@ -2,7 +2,21 @@
 
 
 function prima(num) {
-
+      function prima(num) {
+  if(num===1){
+    return false;
+  }
+  else if(num>1){
+    
+    for (let x=2 ; x<num ;x++){
+         if(num % x == 0){
+          return false;
+          break;
+         }
+         
+    }
+    return true;
+  }}
   }
   
   console.log(prima(1)) //false
