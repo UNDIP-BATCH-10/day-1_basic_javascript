@@ -4,7 +4,11 @@ carilah  total harga barang dari setiap pembelian yang di lakukan
 
 
 function totalHarga(barang) {
-
+let ttl = 0;
+	for (let i = 0; i < barang.length; i++) {
+		ttl += barang[i].harga * barang[i].jumlah;
+			}
+	return 'total = '+ttl;
 	
 }
 
