@@ -1,0 +1,10 @@
+Set-Location "D:\node\basic_javascript\basic\latihan"
+
+
+git checkout -b "yuyaindou"
+git add .
+git commit -m "yuyaindou"
+git push origin "yuyaindou"
+
+
+
