@@ -8,7 +8,13 @@ Untuk soal nomor ini, gunakan FUNCTION yang berisi CONDITIONAL dan LOOPING untuk
 
 
 function singkatan (nama) {
-   
+   var text = '';
+    var kata = nama.split(' ');
+    for (var i = 0; i < kata.length; i++) {
+        text += kata[i][0] + '.';
+    }
+    text = text.slice(0, -1);
+    return text;
 }
 
 console.log(singkatan('Raul Lemos')); //R.L
